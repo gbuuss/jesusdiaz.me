@@ -24,8 +24,6 @@ html, body {
     background-image: url('../images/cordoba.jpg');
 
     header{
-        padding: 10px;
-        overflow: hidden;
 
         #btn-menu{
             border: none;
@@ -43,16 +41,19 @@ html, body {
             height: 101%;
             left: 0;
             opacity: 0;
-            padding: 80px 0 0 0;
             position: fixed;
             top: -110vh;
             transition: opacity 0.2s linear;
-            -moz-transition: opacity 0.2s linear;
-            -webkit-transition: opacity 0.2s linear;
             width: 101%;
             z-index: -1;
             -webkit-backface-visibility: hidden;
 
+            &.active{
+                top: 0;
+                opacity: 1;
+                z-index: 1;
+            }
+            
             a {
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -66,13 +67,15 @@ html, body {
                 text-align: center;
                 text-transform: uppercase;
                 width: 50%;
+
+                b {
+                    display: table-cell;
+                    position: relative;
+                    vertical-align: middle;
+                    z-index: 10;
+                }
             }
         }
-    }
-
-    header.active nav {
-        opacity: 1;
-        top: 0;
     }
 
     #titles{
