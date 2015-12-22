@@ -1,17 +1,15 @@
-'use strict';
+(function (){
 
-/**
- * @ngdoc function
- * @name jesusdiazmeApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the jesusdiazmeApp
- */
-angular.module('jesusdiazmeApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+	'use strict';
+
+	function MainController(scope){
+		scope.showNavbar = function(){
+			console.log('asd');
+		};
+	}
+
+	MainController.$inject = ['$scope'];
+
+	angular.module('jesusdiazmeApp')
+	  .controller('MainCtrl', MainController);
+})();
