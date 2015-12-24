@@ -2,14 +2,14 @@
 
 	'use strict';
 
-	function MainController(scope){
+	function MainCtrl(scope){
 		scope.showNavbar = function(){
 			console.log('asd');
 		};
 	}
 
-	MainController.$inject = ['$scope'];
+	MainCtrl.$inject = ['$scope'];
 
 	angular.module('jesusdiazmeApp')
-	  .controller('MainCtrl', MainController);
+	  .controller('MainCtrl', MainCtrl);
 })();
