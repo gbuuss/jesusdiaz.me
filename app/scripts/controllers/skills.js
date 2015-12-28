@@ -6,15 +6,30 @@
 
 		scope.skills = [
 			{
-				name: 'HTML5',
+				name: 'HTML5/CSS3',
 				percent: '100%',
-				background: 'blue'
+				background: '#13B87C'
 			},
 			{
 				name: 'Javascript',
-				percent: '50%',
-				background: 'red'
-			}
+				percent: '90%',
+				background: '#13B87C'
+			},
+			{
+				name: 'Python',
+				percent: '70%',
+				background: '#13B87C'
+			},
+			{
+				name: 'MySQL',
+				percent: '95%',
+				background: '#13B87C'
+			},
+			{
+				name: 'PHP',
+				percent: '95%',
+				background: '#13B87C'
+			},
 		];
 	}
 

@@ -43,6 +43,12 @@ html, body {
     }
 }
 
+.section-title{
+    margin: 0 0 40px 0;
+    font-size: 3em;
+    font-weight: 400;
+}
+
 #cover_page{
     top: 0;
     width: 100%; 
@@ -136,11 +142,8 @@ html, body {
     60% {transform: translateY(-15px);}
 }
 
-
-
 #about{
-    padding: 20px 0;
-    overflow: hidden;
+    padding: 40px 0;
     background-color: #F6F6F6;
 
     #about-text{
@@ -149,8 +152,7 @@ html, body {
 }
 
 #skills{
-    padding: 20px 0;
-    overflow: hidden;
+    padding: 40px 0;
 }
 
 /*----------  DIRECTIVES  ----------*/
