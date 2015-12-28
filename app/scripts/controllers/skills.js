@@ -33,9 +33,7 @@
 		];
 	}
 
-	SkillsCtrl.$inject = [
-		'$scope'
-	];
+	SkillsCtrl.$inject = ['$scope'];
 
 	angular.module('jesusdiaz')
 	  .controller('SkillsCtrl', SkillsCtrl);

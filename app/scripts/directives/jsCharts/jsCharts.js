@@ -2,13 +2,7 @@
 
     'use strict';
 
-    /**
-     * Show a full navbar with all options
-     * from post, login, search, register
-     * and account configuration.
-     *
-     * @return object
-     */
+
     function HorizontalBar(){
         return {
             restrict: 'E',

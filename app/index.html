@@ -20,29 +20,9 @@
         <![endif]-->
         <!-- Add your site or application content here -->
             
-        <nav class="navbar navbar-custom navbar-fixed-top hidden">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Menú</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-                
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">What I do</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Hire me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <js-navbar></js-navbar>
 
-        <section id="cover_page" ng-include="'views/main.html'" ng-controller="MainCtrl"></section>
+        <section id="cover" ng-include="'views/main.html'" ng-controller="MainCtrl"></section>
         <section id="about" ng-include="'views/about.html'" ng-controller="AboutCtrl"></section>
         <section id="skills" ng-include="'views/skills.html'" ng-controller="SkillsCtrl"></section>
 
@@ -66,6 +46,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/directives/jsCharts/jsCharts.js"></script>
+        <script src="scripts/directives/jsNavbar/jsNavbar.js"></script>
         
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>

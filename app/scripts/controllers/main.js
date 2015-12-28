@@ -2,13 +2,9 @@
 
 	'use strict';
 
-	function MainCtrl(scope){
-		scope.showNavbar = function(){
-			
-		};
+	function MainCtrl(){
+		
 	}
-
-	MainCtrl.$inject = ['$scope'];
 
 	angular.module('jesusdiaz')
 	  .controller('MainCtrl', MainCtrl);

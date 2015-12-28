@@ -10,5 +10,6 @@
  */
 angular
   .module('jesusdiaz', [
-  	'jesusdiaz.directives.jsCharts'
+  	'jesusdiaz.directives.jsCharts',
+  	'jesusdiaz.directives.jsNavbar'
   ]);
