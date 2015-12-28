@@ -135,3 +135,37 @@ html, body {
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
 }
+
+
+
+#about{
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: #F6F6F6;
+
+    #about-text{
+        font-size: 15px;
+    }
+}
+
+#skills{
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/*----------  DIRECTIVES  ----------*/
+js-horizontal-bar-chart{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+    
+    .js-chart-label{
+        font-size: 1.5em;
+        margin: 0 0 5px 0;
+    }
+
+    .js-progress-bar{
+        height: 18px;
+        display: block;
+    }
+}

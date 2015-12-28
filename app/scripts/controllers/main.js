@@ -4,12 +4,12 @@
 
 	function MainCtrl(scope){
 		scope.showNavbar = function(){
-			console.log('asd');
+			
 		};
 	}
 
 	MainCtrl.$inject = ['$scope'];
 
-	angular.module('jesusdiazmeApp')
+	angular.module('jesusdiaz')
 	  .controller('MainCtrl', MainCtrl);
 })();

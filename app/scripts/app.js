@@ -9,4 +9,6 @@
  * Main module of the application.
  */
 angular
-  .module('jesusdiazmeApp', []);
+  .module('jesusdiaz', [
+  	'jesusdiaz.directives.jsCharts'
+  ]);
