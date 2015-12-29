@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name jesusdiazmeApp
+ * @name jesusdiaz
  * @description
- * # jesusdiazmeApp
+ * # jesusdiaz
  *
  * Main module of the application.
  */

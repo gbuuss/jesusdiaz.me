@@ -11,7 +11,7 @@
               width: '=width',
               background: '=background'
             },
-            templateUrl: 'scripts/directives/jsCharts/hz_bar.html',
+            templateUrl: 'views/horizontal_bar.html',
         };
     }
 

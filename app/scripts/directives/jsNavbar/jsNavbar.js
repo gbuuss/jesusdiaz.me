@@ -6,7 +6,7 @@
     function HorizontalBar(){
         return {
             restrict: 'E',
-            templateUrl: 'scripts/directives/jsNavbar/navbar.html',
+            templateUrl: 'views/navbar.html',
         };
     }
 
