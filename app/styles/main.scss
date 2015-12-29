@@ -100,7 +100,7 @@ html, body {
 
         p{
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-family: 'Raleway', sans-serif;
         }
 
@@ -221,5 +221,17 @@ js-horizontal-bar-chart{
     .js-progress-bar{
         height: 25px;
         display: block;
+    }
+}
+
+/*----------  RESPONSIVE  ----------*/
+@media only screen and (max-width: 320px) {
+
+    #cover #titles > p {
+        font-size: 1em;
+    }
+
+    #skill-text p{
+        margin-bottom: 40px;
     }
 }
