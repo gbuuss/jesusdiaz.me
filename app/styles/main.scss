@@ -143,7 +143,7 @@ html, body {
 }
 
 #about{
-    padding: 40px 0;
+    padding: 100px 0;
     background-color: #F6F6F6;
 
     #about-text{
@@ -152,7 +152,48 @@ html, body {
 }
 
 #skills{
-    padding: 40px 0;
+    padding: 100px 0;
+}
+
+#hire-me{
+    padding: 100px 0;
+    color: white;
+    background-color: #14B97D;
+    
+    ul.contacts{
+        margin-bottom: 30px;
+
+        & > li{
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        & > li > a{
+            color: inherit;
+        }
+    }
+    
+    ul.social{
+        margin-bottom: 30px;
+
+        & > li > a > .fa{
+            font-size: 24px;
+            border-radius: 100px;
+            border: 2px solid #fff;
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            margin: 0 5px;
+            color: #fff;
+        }
+    }
+
+    #copy{
+        font-weight: 300;
+        font-size: 1.2em;
+        text-align: center;
+    }
 }
 
 /*----------  DIRECTIVES  ----------*/
