@@ -147,12 +147,23 @@ html, body {
     background-color: #F6F6F6;
 
     #about-text{
-        font-size: 15px;
+        font-size: 1.3em;
     }
 }
 
 #skills{
     padding: 100px 0;
+
+    #skill-text{
+
+        h4{
+            font-size: 2em;
+        }
+
+        p{
+            font-size: 1.3em;
+        }
+    }
 }
 
 #hire-me{
