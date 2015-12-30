@@ -181,6 +181,7 @@ html, body {
 
         & > li > a{
             color: inherit;
+            text-decoration: none;
         }
     }
     
@@ -233,5 +234,13 @@ js-horizontal-bar-chart{
 
     #skill-text p{
         margin-bottom: 40px;
+    }
+
+    #hire-me ul.contacts > li{
+        display: block;
+        border: 1px solid white;
+        padding: 10px;
+        margin: 15px 20px;
+        border-radius: 4px;
     }
 }
