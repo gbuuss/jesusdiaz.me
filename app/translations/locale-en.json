@@ -1,17 +1,23 @@
 {
-  "BUTTON_LANG_ES": "Spanish",
-  "BUTTON_LANG_EN": "English",
+  "MENU_ABOUT": "About",
+  "MENU_HIRE_ME": "Hire Me",
+  "MENU_BUTTON_LANG_ES": "Spanish",
+  "MENU_BUTTON_LANG_EN": "English",
+
   "MAIN_IAM": "I'm",
   "MAIN_JOB_TITLE": "Software Developer",
   "MAIN_LIVE": "Based in Córdoba, Argentina.",
   "MAIN_DESCRIPTION": "Take a look at some of my works, and if you like them, feel free to contact me. Let’s create something WOW!",
+
   "ABOUT_TITLE": "ABOUT",
   "ABOUT_DESCRIPTION_P1": "I'm Jesús Díaz a Full Stack Developer.",
   "ABOUT_DESCRIPTION_P2": "I am able to work effectively in a team or on my Own. I have demonstrated an ability to lead small Teams and mentor other workers. I pride myself on being able to use my knowledge and initiative to deliver high quality results to tight deadlines. I enjoy a challenge and look for the opportunity to expand and develop my skill set.",
   "ABOUT_DESCRIPTION_P3": "Some people call what I do User Experience Design, some call it Web design, some think I am a Front-End Developer, others see me as a UI Designer. I see what I do as a combination of all these things and ultimately don’t think it really matters which label you like to use.",
   "ABOUT_DESCRIPTION_P4": "What does matter is the output of my work, which is always focused at the point where user, business and technical requirements meet and tends to become a perfect product.",
+
   "SKILLS_TITLE": "Skills",
   "SKILLS_SUBTITLE": "I'm a truly dynamic individual with next-level ideas and a drive to succeed.",
   "SKILLS_DESCRIPTION": "I have a strong interest for anything Tech related! At a young age I was always fascinated with computers and how they allow people to discover such an incredible amount of information. I love meeting new people and creating connections. I'm a total geek at heart and nothing will ever change that!",
+  
   "HIRE_ME_TITLE": "Want to work with me?"
 }

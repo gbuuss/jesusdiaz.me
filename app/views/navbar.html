@@ -11,10 +11,18 @@
         
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Hire me</a></li>
-                <li><a ng-show="lang == 'en'" ng-click="changeLanguage('es')" translate="BUTTON_LANG_ES"></a></li>
-                <li><a ng-show="lang == 'es'" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></a></li>
+                <li><a href="#">{{ 'MENU_ABOUT' | translate}}</a></li>
+                <li><a href="#">{{ 'MENU_HIRE_ME' | translate }}</a></li>
+                <li>
+                    <a ng-show="lang == 'en'" ng-click="changeLanguage('es')" href="#">
+                        <i class="fa fa-globe"></i> {{ 'MENU_BUTTON_LANG_ES' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a ng-show="lang == 'es'" ng-click="changeLanguage('en')" href="#">
+                        <i class="fa fa-globe"></i> {{ 'MENU_BUTTON_LANG_EN' | translate }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
