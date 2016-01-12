@@ -1,11 +1,11 @@
-(function (){
+(function() {
 
 	'use strict';
 
-	function MainCtrl(){
-		
+	function MainCtrl() {
+
 	}
 
 	angular.module('jesusdiaz')
-	  .controller('MainCtrl', MainCtrl);
+		.controller('MainCtrl', MainCtrl);
 })();

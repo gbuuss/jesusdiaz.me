@@ -1,43 +1,44 @@
-'use strict';
+(function() {
 
-function Config(translateProvider){
-	translateProvider
-		.useStaticFilesLoader({
-		    prefix: '/translations/locale-',
-		    suffix: '.json'
-		})
-        .useLocalStorage()
-        .preferredLanguage('en')
-        .useMissingTranslationHandlerLog();
-}
+    'use strict';
 
-function Run(rootScope){
-    rootScope.lang = 'en';
-}
+    /**
+     * @param {[type]}
+     */
+    function Config(translateProvider) {
+        translateProvider
+            .useStaticFilesLoader({
+                prefix: 'translations/locale-',
+                suffix: '.json'
+            })
+            .useLocalStorage()
+            .preferredLanguage('en')
+            .useMissingTranslationHandlerLog();
+    }
 
-Config.$inject = [
-    '$translateProvider'
-];
+    /**
+     * @param {[type]}
+     */
+    function Run(rootScope) {
+        rootScope.lang = 'en';
+    }
 
-Run.$inject = [
-    '$rootScope'
-];
+    Config.$inject = [
+        '$translateProvider'
+    ];
 
-/**
- * @ngdoc overview
- * @name jesusdiaz
- * @description
- * # jesusdiaz
- *
- * Main module of the application.
- */
-angular
-  .module('jesusdiaz', [
-  	'ngFitText',
-    'ngCookies',
-  	'pascalprecht.translate',
-  	'jesusdiaz.directives.jsCharts',
-  	'jesusdiaz.directives.jsNavbar'
-  ])
-  .run(Run)
-  .config(Config);
+    Run.$inject = [
+        '$rootScope'
+    ];
+
+    angular.module('jesusdiaz', [
+            'ngFitText',
+            'ngCookies',
+            'pascalprecht.translate',
+            'jesusdiaz.directives.jsCharts',
+            'jesusdiaz.directives.jsNavbar'
+        ])
+        .run(Run)
+        .config(Config);
+
+})();

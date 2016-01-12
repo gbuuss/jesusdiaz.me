@@ -1,20 +1,20 @@
-(function(){
+(function() {
 
     'use strict';
 
-    function HorizontalBarController(scope, rootScope, translate){
+    function HorizontalBarController(scope, rootScope, translate) {
 
-    	scope.changeLanguage = function(langKey){
-    		translate.use(langKey);
-    	}
+        scope.changeLanguage = function(langKey) {
+            translate.use(langKey);
+        }
 
-    	rootScope.$on('$translateChangeSuccess', function(event, data) {
-			var language = data.language;
-			rootScope.lang = language;
-	    });
+        rootScope.$on('$translateChangeSuccess', function(event, data) {
+            var language = data.language;
+            rootScope.lang = language;
+        });
     }
 
-    function HorizontalBar(){
+    function HorizontalBar() {
         return {
             restrict: 'E',
             templateUrl: 'views/navbar.html',
@@ -23,9 +23,9 @@
     }
 
     HorizontalBarController.$inject = [
-    	'$scope',
-    	'$rootScope',
-    	'$translate'
+        '$scope',
+        '$rootScope',
+        '$translate'
     ];
 
     angular.module('jesusdiaz.directives.jsNavbar', [])

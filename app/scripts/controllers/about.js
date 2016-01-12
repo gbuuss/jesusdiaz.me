@@ -1,11 +1,11 @@
-(function (){
+(function() {
 
 	'use strict';
 
-	function AboutCtrl(){
+	function AboutCtrl() {
 
 	}
 
 	angular.module('jesusdiaz')
-	  .controller('AboutCtrl', AboutCtrl);
+		.controller('AboutCtrl', AboutCtrl);
 })();

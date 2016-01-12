@@ -1,15 +1,15 @@
-(function(){
+(function() {
 
     'use strict';
 
 
-    function HorizontalBar(){
+    function HorizontalBar() {
         return {
             restrict: 'E',
             scope: {
-              label: '=label',
-              width: '=width',
-              background: '=background'
+                label: '=label',
+                width: '=width',
+                background: '=background'
             },
             templateUrl: 'views/horizontal_bar.html',
         };
