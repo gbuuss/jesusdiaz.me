@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="{{ lang }}" ng-app="jesusdiaz">
     <head>
         <meta charset="utf-8">
         <title>Jesús Díaz | Full Stack Developer</title>
-        <meta name="description" content="">
+        <meta name="description" content="{{ 'MAIN_DESCRIPTION' | translate }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.) styles/vendor.css -->
@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body ng-app="jesusdiaz">
+    <body>
         <!--[if lte IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -47,6 +47,10 @@
         <script src="bower_components/ngFitText/src/ng-FitText.js"></script>
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+        <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+        <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 

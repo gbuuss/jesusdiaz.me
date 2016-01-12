@@ -13,8 +13,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Hire me</a></li>
-                <li><a ng-click="changeLanguage('es')" translate="BUTTON_LANG_ES"></a></li>
-                <li><a ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></a></li>
+                <li><a ng-show="lang == 'en'" ng-click="changeLanguage('es')" translate="BUTTON_LANG_ES"></a></li>
+                <li><a ng-show="lang == 'es'" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></a></li>
             </ul>
         </div>
     </div>

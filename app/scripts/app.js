@@ -2,14 +2,27 @@
 
 function Config(translateProvider){
 	translateProvider
-		.preferredLanguage('en')
 		.useStaticFilesLoader({
 		    prefix: '/translations/locale-',
 		    suffix: '.json'
-		  });
+		})
+        .useLocalStorage()
+        .preferredLanguage('en')
+        .useMissingTranslationHandlerLog();
 }
 
-Config.$inject = ['$translateProvider'];
+function Run(rootScope){
+    rootScope.lang = 'en';
+}
+
+Config.$inject = [
+    '$translateProvider'
+];
+
+Run.$inject = [
+    '$rootScope'
+];
+
 /**
  * @ngdoc overview
  * @name jesusdiaz
@@ -21,8 +34,10 @@ Config.$inject = ['$translateProvider'];
 angular
   .module('jesusdiaz', [
   	'ngFitText',
+    'ngCookies',
   	'pascalprecht.translate',
   	'jesusdiaz.directives.jsCharts',
   	'jesusdiaz.directives.jsNavbar'
   ])
+  .run(Run)
   .config(Config);
