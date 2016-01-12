@@ -11,7 +11,6 @@
                 prefix: 'translations/locale-',
                 suffix: '.json'
             })
-            .useLocalStorage()
             .preferredLanguage('en')
             .useMissingTranslationHandlerLog();
     }
@@ -33,7 +32,6 @@
 
     angular.module('jesusdiaz', [
             'ngFitText',
-            'ngCookies',
             'pascalprecht.translate',
             'jesusdiaz.directives.jsCharts',
             'jesusdiaz.directives.jsNavbar'
