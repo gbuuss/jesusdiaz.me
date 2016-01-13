@@ -31,7 +31,7 @@
     ];
 
     angular.module('jesusdiaz', [
-            'ngFitText',
+            'angularSmoothscroll',
             'pascalprecht.translate',
             'jesusdiaz.directives.jsCharts',
             'jesusdiaz.directives.jsNavbar'

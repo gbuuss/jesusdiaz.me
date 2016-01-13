@@ -26,12 +26,32 @@ html, body {
         font-weight: 700;
         transition: all .3s ease;
         text-transform: uppercase;
+
+        .fa.fa-globe{
+            color: #13B87C;
+        }
     }
 
     #menu > ul > li > a:hover,
     #menu > ul > li > a:focus{
         color: #13B87C;
         background-color: transparent;
+    }
+}
+
+#back-to-top{
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    display: block;
+    position: fixed;
+    text-decoration: none;
+
+    i{
+        padding: 15px;
+        display: block;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .6);
     }
 }
 
@@ -68,17 +88,16 @@ html, body {
         text-align: center;
         transform: translate(-50%, -50%);
 
-        #me{
-            width: 120px;
-            margin-bottom: 10px;
-            border: 5px solid white;
+        img#me{
+            margin: 0 auto 1em auto;
+            border: .3em solid white;
         }
 
         h1{
             margin: 0;
             padding: 0;
             color: white;
-            font-size: 9em;
+            font-size: 9vw;
             color: #13B87C;
             font-weight: 700;
             font-family: 'Raleway', sans-serif;
@@ -97,7 +116,7 @@ html, body {
 
         .scroll-down{
             font-size: 3em;
-            margin-top: 20px;
+            margin-top: .5em;
 
             .fa.bounce{
                 animation: bounce 2s infinite;
@@ -227,19 +246,25 @@ js-horizontal-bar-chart{
 
 @media only screen and (max-width: 750px) {
     body{
-        font-size: 11px;
+        font-size: 12px;
     }
 
     #skill-text p{
-        margin-bottom: 40px;
+        margin-bottom: 2em;
     }
 
     #hire-me ul.contacts > li{
         display: block;
-        border: 1px solid white;
         padding: 10px;
         margin: 15px 20px;
-        border-radius: 4px;
+        border-radius: .3em;
+        border: 1px solid white;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        font-size: 10px;
     }
 }
 

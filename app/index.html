@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="{{ lang }}" ng-app="jesusdiaz">
-    <head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
         <meta charset="utf-8">
         <title>Jesús Díaz | Software Developer</title>
-        <meta name="description" content="{{ 'MAIN_DESCRIPTION' | translate }}">
+        <meta name="description" content="Puedes mirar algunos de mis trabajos, y si te gustan, sientete libre en contactarme. Vamos a crear algo WOW!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- facebook tags --> 
+        <meta property="og:type" content="profile" /> 
+        <meta property="og:url" content="https://www.facebook.com/jesusdiazbc" /> 
+        <meta property="og:title" content="Jesús Díaz" />
+        <meta property="og:description" content="Puedes mirar algunos de mis trabajos, y si te gustan, sientete libre en contactarme. Vamos a crear algo WOW!" />
+        <meta property="profile:first_name" content="Jesús" />
+        <meta property="profile:last_name" content="Díaz" />
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
@@ -29,6 +38,10 @@
         <section id="skills" ng-include="'views/skills.html'" ng-controller="SkillsCtrl"></section>
         <section id="hire-me" ng-include="'views/hire_me.html'" ng-controller="HireMeCtrl"></section>
 
+        <a smooth-scroll target="cover" id="back-to-top" href="" title="Back to top">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
         <script>
             !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -41,13 +54,15 @@
 
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-        <script src="bower_components/ngFitText/src/ng-FitText.js"></script>
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
         <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <script src="bower_components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
