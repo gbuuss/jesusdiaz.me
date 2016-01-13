@@ -1,13 +1,16 @@
 (function() {
 
-	'use strict';
+    'use strict';
 
-	function HireMeCtrl(scope) {
-		scope.date = new Date();
-	}
+    /**
+     * @param {[type]}
+     */
+    function HireMeCtrl(scope) {
+        scope.date = new Date();
+    }
 
-	HireMeCtrl.$inject = ['$scope'];
+    HireMeCtrl.$inject = ['$scope'];
 
-	angular.module('jesusdiaz')
-		.controller('HireMeCtrl', HireMeCtrl);
+    angular.module('jesusdiaz')
+        .controller('HireMeCtrl', HireMeCtrl);
 })();

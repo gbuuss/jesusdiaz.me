@@ -2,6 +2,11 @@
 
     'use strict';
 
+    /**
+     * @param {[type]}
+     * @param {[type]}
+     * @param {[type]}
+     */
     function HorizontalBarController(scope, rootScope, translate) {
 
         scope.changeLanguage = function(langKey) {
@@ -14,6 +19,9 @@
         });
     }
 
+    /**
+     * 
+     */
     function HorizontalBar() {
         return {
             restrict: 'E',

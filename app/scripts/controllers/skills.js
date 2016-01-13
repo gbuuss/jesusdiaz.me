@@ -2,6 +2,9 @@
 
 	'use strict';
 
+	/**
+	 * @param {[type]}
+	 */
 	function SkillsCtrl(scope) {
 
 		scope.skills = [{

@@ -2,7 +2,9 @@
 
     'use strict';
 
-
+    /**
+     * 
+     */
     function HorizontalBar() {
         return {
             restrict: 'E',
