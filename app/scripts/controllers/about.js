@@ -5,10 +5,10 @@
 	/**
 	 * 
 	 */
-	function MainCtrl() {
+	function AboutCtrl() {
 
 	}
 
 	angular.module('jesusdiaz')
-		.controller('MainCtrl', MainCtrl);
+		.controller('AboutCtrl', AboutCtrl);
 })();

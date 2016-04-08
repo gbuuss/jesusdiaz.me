@@ -1,73 +1,80 @@
 <!doctype html>
-<html>
-    <head>
+<html lang="{{ lang }}" ng-app="jesusdiaz">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
         <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <title>Jesús Díaz | Software Developer</title>
+        <meta name="description" content="Puedes mirar algunos de mis trabajos, y si te gustan, sientete libre en contactarme. Vamos a crear algo WOW!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- facebook tags --> 
+        <meta property="og:type" content="profile" /> 
+        <meta property="og:url" content="https://www.facebook.com/jesusdiazbc" /> 
+        <meta property="og:title" content="Jesús Díaz" />
+        <meta property="og:description" content="Puedes mirar algunos de mis trabajos, y si te gustan, sientete libre en contactarme. Vamos a crear algo WOW!" />
+        <meta property="profile:first_name" content="Jesús" />
+        <meta property="profile:last_name" content="Díaz" />
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.css" />
+        <link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.min.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body ng-app="jesusdiazmeApp">
+    <body>
         <!--[if lte IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
-        <div class="header">
-            <div class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#/">jesusdiazme</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#/">Home</a></li>
-                            <li><a ng-href="#/">About</a></li>
-                            <li><a ng-href="#/">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-            </div>
-        </div>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+            
+        <js-navbar></js-navbar>
+
+        <section id="cover" ng-include="'views/main.html'" ng-controller="MainCtrl"></section>
+        <section id="about" ng-include="'views/about.html'" ng-controller="AboutCtrl"></section>
+        <section id="skills" ng-include="'views/skills.html'" ng-controller="SkillsCtrl"></section>
+        <section id="hire-me" ng-include="'views/hire_me.html'" ng-controller="HireMeCtrl"></section>
+
+        <a smooth-scroll target="cover" id="back-to-top" href="" title="Back to top">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+
+        <!-- Google Analytics -->
         <script>
-        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-72407602-1', 'auto');
+            ga('send', 'pageview');
         </script>
+
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+        <script src="bower_components/json3/lib/json3.js"></script>
+        <script src="bower_components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/directives/jsCharts/jsCharts.js"></script>
+        <script src="scripts/directives/jsNavbar/jsNavbar.js"></script>
+        
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/skills.js"></script>
+        <script src="scripts/controllers/hire_me.js"></script>
         <!-- endbuild -->
     </body>
 </html>

@@ -1,12 +1,42 @@
-'use strict';
+(function() {
 
-/**
- * @ngdoc overview
- * @name jesusdiazmeApp
- * @description
- * # jesusdiazmeApp
- *
- * Main module of the application.
- */
-angular
-  .module('jesusdiazmeApp', []);
+    'use strict';
+
+    /**
+     * @param {[type]}
+     */
+    function Config(translateProvider) {
+        translateProvider
+            .useStaticFilesLoader({
+                prefix: 'translations/locale-',
+                suffix: '.json'
+            })
+            .preferredLanguage('en')
+            .useMissingTranslationHandlerLog();
+    }
+
+    /**
+     * @param {[type]}
+     */
+    function Run(rootScope) {
+        rootScope.lang = 'en';
+    }
+
+    Config.$inject = [
+        '$translateProvider'
+    ];
+
+    Run.$inject = [
+        '$rootScope'
+    ];
+
+    angular.module('jesusdiaz', [
+            'angularSmoothscroll',
+            'pascalprecht.translate',
+            'jesusdiaz.directives.jsCharts',
+            'jesusdiaz.directives.jsNavbar'
+        ])
+        .run(Run)
+        .config(Config);
+
+})();
