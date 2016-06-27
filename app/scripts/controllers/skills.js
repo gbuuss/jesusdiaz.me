@@ -11,23 +11,32 @@
             {
                 name: 'HTML5/CSS3',
                 percent: '100%',
-                background: '#E24923'
-            }, {
+                background: '#16A2A1'
+            },
+            {
                 name: 'Javascript',
-                percent: '90%',
-                background: '#F0DB4E'
-            }, {
+                percent: '100%',
+                background: '#A4488B'
+            },
+            {
                 name: 'Python',
                 percent: '75%',
-                background: '#3773A5'
-            }, {
+                background: '#A6C738'
+            },
+            {
                 name: 'MySQL',
                 percent: '100%',
-                background: '#E48D00'
-            }, {
+                background: '#E23740'
+            },
+            {
                 name: 'PHP',
                 percent: '100%',
-                background: '#617CBE'
+                background: '#FCB618'
+            },
+            {
+                name: 'AngularJs',
+                percent: '90%',
+                background: '#16A2A1'
             }
         ];
     }

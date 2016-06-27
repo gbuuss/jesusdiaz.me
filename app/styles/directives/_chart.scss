@@ -9,7 +9,10 @@ js-horizontal-bar-chart {
   }
 
   .js-progress-bar {
+    color: white;
     height: 25px;
     display: block;
+    line-height: 25px;
+    @include border-radius(4px);
   }
 }
