@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
     'use strict';
 
@@ -31,11 +31,11 @@
     ];
 
     angular.module('jesusdiaz', [
-            'angularSmoothscroll',
-            'pascalprecht.translate',
-            'jesusdiaz.directives.jsCharts',
-            'jesusdiaz.directives.jsNavbar'
-        ])
+        'smoothScroll',
+        'pascalprecht.translate',
+        'jesusdiaz.directives.jsCharts',
+        'jesusdiaz.directives.jsNavbar'
+    ])
         .run(Run)
         .config(Config);
 
