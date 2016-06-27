@@ -9,7 +9,8 @@
     "angular-translate": "~2.8.1",
     "angular-translate-loader-static-files": "~2.8.1",
     "angular-translate-handler-log": "~2.8.1",
-    "angular-smoothscroll": "~1.1.1"
+    "angular-smoothscroll": "~1.1.1",
+    "helpercss": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
