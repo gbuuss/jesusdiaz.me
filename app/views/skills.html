@@ -1,13 +1,57 @@
 <div class="container">
 	<h1 class="section-title text-center">{{ 'SKILLS_TITLE' | translate }}</h1>
-	<div class="row">
+	<div class="row mgb-40">
 		<div id="skill-text" class="col-md-4 col-md-offset-2">
 			<h4>{{ 'SKILLS_SUBTITLE' | translate }}</h4>
 			<hr>
 			<p>{{ 'SKILLS_DESCRIPTION' | translate }}</p>
 		</div>
 		<div class="col-md-4">
-			<js-horizontal-bar-chart ng-repeat="skill in skills" label="skill.name" width="skill.percent" background="skill.background"/>
+			<js-horizontal-bar-chart ng-repeat="skill in skills" label="skill.name" width="skill.percent"
+			                         background="skill.background"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center">
+			<a href="https://angular.io/" target="_blank" title="AngularJs">
+				<img src="images/tools/angular.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://aws.amazon.com/" target="_blank" title="Amazon Web Services">
+				<img src="images/tools/aws.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://git-scm.com/" target="_blank" title="Git">
+				<img src="images/tools/git.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://www.javascript.com/" target="_blank" title="JavaScript">
+				<img src="images/tools/javascript.jpg" class="mgb-15 mgr-15">
+			</a>
+			<a href="#" target="_blank" title="Gulp/Grunt">
+				<img src="images/tools/grunt-gulp.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://www.python.org/" target="_blank" title="Python">
+				<img src="images/tools/python.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="#" target="_blank" title="Sass/Less">
+				<img src="images/tools/sass-less.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://www.w3.org/html/logo/" target="_blank" title="Html5">
+				<img src="images/tools/html5.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="http://php.net/" target="_blank" title="PHP">
+				<img src="images/tools/php.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="http://cakephp.org/" target="_blank" title="CakePHP">
+				<img src="images/tools/cakephp.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://jquery.com/" target="_blank" title="Jquery">
+				<img src="images/tools/jquery.png" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://www.mysql.com/" target="_blank" title="MySQL">
+				<img src="images/tools/mysql.jpg" class="mgb-15 mgr-15">
+			</a>
+			<a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
+				<img src="images/tools/typescript.png" class="mgb-15 mgr-15">
+			</a>
 		</div>
 	</div>
 </div>

@@ -1,37 +1,39 @@
-(function() {
+(function () {
 
-	'use strict';
+    'use strict';
 
-	/**
-	 * @param {[type]}
-	 */
-	function SkillsCtrl(scope) {
+    /**
+     * @param {[type]}
+     */
+    function SkillsCtrl(scope) {
 
-		scope.skills = [{
-			name: 'HTML5/CSS3',
-			percent: '100%',
-			background: '#13B87C'
-		}, {
-			name: 'Javascript',
-			percent: '90%',
-			background: '#13B87C'
-		}, {
-			name: 'Python',
-			percent: '70%',
-			background: '#13B87C'
-		}, {
-			name: 'MySQL',
-			percent: '95%',
-			background: '#13B87C'
-		}, {
-			name: 'PHP',
-			percent: '95%',
-			background: '#13B87C'
-		}, ];
-	}
+        scope.skills = [
+            {
+                name: 'HTML5/CSS3',
+                percent: '100%',
+                background: '#E24923'
+            }, {
+                name: 'Javascript',
+                percent: '90%',
+                background: '#F0DB4E'
+            }, {
+                name: 'Python',
+                percent: '75%',
+                background: '#3773A5'
+            }, {
+                name: 'MySQL',
+                percent: '100%',
+                background: '#E48D00'
+            }, {
+                name: 'PHP',
+                percent: '100%',
+                background: '#617CBE'
+            }
+        ];
+    }
 
-	SkillsCtrl.$inject = ['$scope'];
+    SkillsCtrl.$inject = ['$scope'];
 
-	angular.module('jesusdiaz')
-		.controller('SkillsCtrl', SkillsCtrl);
+    angular.module('jesusdiaz')
+        .controller('SkillsCtrl', SkillsCtrl);
 })();
