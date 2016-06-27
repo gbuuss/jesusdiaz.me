@@ -1,0 +1,21 @@
+#skills {
+  padding: 100px 0;
+
+  #skill-text {
+
+    h4 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    // Media queries
+    @media #{$mq-tablet} {
+      p {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}

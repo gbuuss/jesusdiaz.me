@@ -1,0 +1,10 @@
+
+
+
+// Media queries
+$mq-mobile: "screen and (max-width: #{$screen-xs-max})";
+$mq-mobile-and-tablet: "screen and (max-width: #{$screen-sm-max})";
+$mq-tablet: "screen and (max-width: #{$screen-sm-max}) and (min-width: #{$screen-sm-min})";
+$mq-tablet-and-desktop: "screen and (min-width: #{$screen-sm-min})";
+$mq-desktop-md: "screen and (max-width: #{$screen-md-max}) and (min-width: #{$screen-md-min})";
+$mq-desktop: "screen and (min-width: #{$screen-md-min})";

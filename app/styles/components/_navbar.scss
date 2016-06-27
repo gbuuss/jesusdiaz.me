@@ -1,0 +1,42 @@
+.navbar-custom {
+  border-bottom: none;
+  background-color: transparent;
+
+  #menu > ul > li > a {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 300;
+    transition: all .3s ease;
+
+    .fa.fa-globe {
+      color: #13B87C;
+    }
+  }
+
+  #menu > ul > li > a:hover,
+  #menu > ul > li > a:focus {
+    color: #13B87C;
+    background-color: transparent;
+  }
+
+  // Media queries
+  @media #{$mq-mobile} {
+    border-bottom: none;
+    background-color: white;
+
+    button.navbar-toggle {
+      color: #444;
+      font-size: 1.6em;
+      margin: 4px 10px 4px 0;
+    }
+    #menu > ul > li {
+      text-align: center;
+    }
+
+    #menu > ul > li > a {
+      color: #444;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
