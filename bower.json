@@ -27,6 +27,12 @@
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
       ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js",
+        "angular-csp.css"
+      ]
     }
   }
 }

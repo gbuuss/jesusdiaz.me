@@ -18,6 +18,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
         <link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.css" />
         <link rel="stylesheet" href="bower_components/font-awesome-animation/dist/font-awesome-animation.min.css" />
         <link rel="stylesheet" href="bower_components/helpercss/stylesheets/helpercss.css" />
@@ -27,7 +28,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body>
+    <body ng-cloak>
         <!--[if lte IE 8]>
         <p class="browsehappy">
 	        You are using an <strong>outdated</strong> browser.
@@ -43,7 +44,7 @@
         <section id="skills" ng-include="'views/skills.html'" ng-controller="SkillsCtrl"></section>
         <section id="hire-me" ng-include="'views/hire_me.html'" ng-controller="HireMeCtrl"></section>
 
-        <a smooth-scroll target="cover" id="back-to-top" href="" title="Back to top">
+        <a href="#" scroll-to="cover" duration="1000" id="back-to-top" title="Back to top">
             <i class="fa fa-arrow-up"></i>
         </a>
 
@@ -60,7 +61,7 @@
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
         <script src="bower_components/angular-translate/angular-translate.js"></script>
         <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
